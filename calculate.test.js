@@ -12,3 +12,11 @@ it("배열을 합쳤을떄", () => {
   // Assert
   expect(result).toBe(6);
 });
+
+it("숫자가 아닌 값이 들어갔을 때", () => {
+  const inputs = ["invalid", 1];
+
+  const result = add(inputs);
+
+  expect(result).toBeNaN();
+});
